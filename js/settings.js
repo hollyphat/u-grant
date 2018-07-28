@@ -10,7 +10,7 @@ var supervisor = "HigoTech";
 var url;
 
 var env,server_upload_url,app_path;
-env = "local";
+env = "locals";
 
 var base_url;
 
