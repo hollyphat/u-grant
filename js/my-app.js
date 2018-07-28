@@ -615,7 +615,7 @@ myApp.onPageInit("view-loan-2",function (page) {
 
     $("[name=email]").val(sessionStorage.getItem("email"));
 
-    Voguepay.init({form:'payform'});
+    //Voguepay.init({form:'payform'});
 
     $("#pay-now").on("click",function (e) {
        e.preventDefault();
