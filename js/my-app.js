@@ -620,6 +620,8 @@ myApp.onPageInit("view-loan-2",function (page) {
     $("#pay-now").on("click",function (e) {
        e.preventDefault();
 
+       myApp.showPreloader("Please wait...");
+
        var user_id = sessionStorage.getItem("user_id");
        $.ajax({
           url: url,
@@ -630,12 +632,15 @@ myApp.onPageInit("view-loan-2",function (page) {
               'loan_id': loan_id
           },
            success: function (f) {
+            myApp.hidePreloader();
                show_toast("Payment made successfully","green");
                //window.location()
            },
            error: function (err) {
+            myApp.hidePreloader();
                show_toast("Network error, try again","red");
-           }
+           },
+           timeout: 45000
        });
     });
 
