@@ -40,26 +40,13 @@
 
 
 
-            <div class="content-block-inner">
-                <form id='payform' onsubmit='return false;' method='POST' action='https://voguepay.com/pay/'>
-                    <input type='hidden' name='v_merchant_id' value='2540-0043693' />
-                    <input type='hidden' name='merchant_ref' value='234-567-890' />
-                    <input type='hidden' name='memo' value='Loan Grant of {{amount}}' />
-
-                    <input type='hidden' name='item_1' value='{{loan_type}} Loan' />
-                    <input type='hidden' name='description_1' value='{{loan_type}} Loan' />
-                    <input type='hidden' name='price_1' value='{{amount_to_pay}}' />
-
-
-
-                    <input type='hidden' name='total' value='{{amount_to_pay}}' />
-
-                    <input type='hidden' name='email'/>
-                    <input type='image' src='http://voguepay.com/images/buttons/buynow_blue.png' alt='Submit' />
-                </form>
-
-
+            <div class="content-block-inner">                
                 <a href="#" class="button button-fill pay-now">Pay</a>
+
+
+                <p style="color: #f00;">
+                	NOTE: <br>You will get 8% interest on the loan
+                </p>
             </div>
         </div>
     </div>
