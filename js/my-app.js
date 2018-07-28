@@ -538,7 +538,7 @@ myApp.onPageInit("pay_loan",function (page) {
 myApp.onPageInit('b-bank',function (page) {
    update_stat();
 
-   myApp.showPreloader("Fething account details...");
+   myApp.showPreloader("Fetching account details...");
    var user_id = sessionStorage.getItem("user_id");
 
     $.ajax({
@@ -561,7 +561,8 @@ myApp.onPageInit('b-bank',function (page) {
                 $("[name=account_name]").val(f.datas.account_name);
             }
         },
-        timeout: function (e) {
+        timeout: 45000,
+        error: function (e) {
             myApp.hidePreloader();
             vibration();
             show_toast("Network error..., unable to load your account details!","red");
@@ -596,6 +597,48 @@ myApp.onPageInit('b-bank',function (page) {
             }
         });
     });
+
+});
+
+
+myApp.onPageInit("view-loan-2",function (page) {
+
+    update_stat();
+
+    var thisPageQuery = page.query;
+
+
+
+    var loan_id;
+
+    loan_id = thisPageQuery.id;
+
+    $("[name=email]").val(sessionStorage.getItem("email"));
+
+    Voguepay.init({form:'payform'});
+
+    $("#pay-now").on("click",function (e) {
+       e.preventDefault();
+
+       var user_id = sessionStorage.getItem("user_id");
+       $.ajax({
+          url: url,
+          type: 'post',
+          data:{
+              'pay_loan' : '',
+              'user_id': user_id,
+              'loan_id': loan_id
+          },
+           success: function (f) {
+               show_toast("Payment made successfully","green");
+               //window.location()
+           },
+           error: function (err) {
+               show_toast("Network error, try again","red");
+           }
+       });
+    });
+
 
 });
 
