@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="theme-color" content="#2196f3">
+    <title>U-Grant</title>
+    <!-- Path to Framework7 Library CSS-->
+
+    <!--<link rel="stylesheet" href="css/framework7.material.min.css">-->
+    <!--<link rel="stylesheet" href="css/framework7.material.colors.min.css">-->
+
+      <link rel="stylesheet" href="css/framework7.material.min.css">
+      <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+
+      <link rel="stylesheet" href="css/material-icon.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+      <link rel="stylesheet" href="lib/toast/css/iziToast.min.css">
+      <link rel="stylesheet" href="lib/upload/fine-uploader-new.min.css">
+  </head>
+  <body class="theme-teal">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-cover">
+        <div class="content-block">
+            <div align="center">
+                <h3 class="logo-text">U-grant</h3>
+            </div>
+            <!--<h4 class="center text-teal">Uwansell</h4>-->
+            <div class="list-block">
+                <ul>
+
+                    <li class="buyer-l">
+                        <a href="b-request.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-folder-open-o"></i> Access Loan
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="buyer-l">
+                        <a href="b-profile.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-user-circle-o"></i> Profile
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="buyer-l">
+                        <a href="b-account.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-bank"></i> Bank Info
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="buyer-l">
+                        <a href="b-history.html" class="staff-logout item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-area-chart"></i> Loan History
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="buyer-l">
+                        <a href="b-history_2.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-area-chart"></i> Loan Repay
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li class="seller-l">
+                        <a href="s-loan.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-folder-open-o"></i> Grant Loan
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="seller-l">
+                        <a href="s-profile.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-user-circle-o"></i> Company Profile
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="seller-l">
+                        <a href="s-account.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-bank"></i> Bank Info
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="seller-l">
+                        <a href="s-history.html" class="staff-logout item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-area-chart"></i> Transactions
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="about.html" class="item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-bookmark"></i> About
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="log-user">
+                        <a href="" class="logout item-link close-panel">
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title">
+                                        <i class="fa fa-sign-out"></i> Logout
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed">
+          <!-- Page, data-page contains page name-->
+
+            <div class="page" data-page="index-page">
+
+                <div class="page-content" id="main-pages">
+
+                    <div class="login-screen-title logo-text" style="padding: 10px;">U-Grant</div>
+                    <p class="center">
+                        Buy and Sell loan with ease...
+                    </p>
+                    <form action="" method="post" role="form" id="login-form">
+                        <div class="list-block inputs-list">
+                            <ul>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Email Address</div>
+                                        <div class="item-input">
+                                            <input type="email" autocomplete="off" required="" id="email_login" name="email" placeholder="Email Address"/>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label">Password</div>
+                                        <div class="item-input">
+                                            <input type="password" required="" id="password_login" name="password" placeholder="Your password"/>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <!-- Additional "smart-select" class -->
+                                    <a href="#" class="item-link smart-select">
+                                        <!-- select -->
+                                        <select name="login_as" class="smart_1">
+                                            <option value="">Login as</option>
+                                            <option value="buyer">Loan Buyer</option>
+                                            <option value="seller">Loan Seller</option>
+                                        </select>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <!-- Select label -->
+                                                <div class="item-title">Login as</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="content-block login-btn">
+                            <input type="submit" class="button button-fill button-raised" value="Sign In">
+                        </div>
+                        <div class="content-block login-waiting center hide">
+                            <img src="img/ajax-loader.gif" alt="">
+                        </div>
+
+                        <div class="content-block">
+                            <a href="register.html" class="button">Sign Up</a>
+
+                            <a href="password.html" class="button">Forgot Password</a>
+                        </div>
+
+
+                        <div class="content-block">
+                            <div class="list-block-label center"><b>Develop By:</b>HigoTech.</div>
+                        </div>
+                    </form>
+
+                    <a href="home_b.html" class="hide buyer-link" id="buyer-link">Home</a>
+                    <a href="home_s.html" class="hide seller-link" id="seller-link">Home</a>
+
+                </div>
+
+
+
+        </div>
+        <!-- Bottom Toolbar-->
+
+      </div>
+    </div>
+    </div>
+    <!--jquery-->
+
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="lib/toast/js/iziToast.min.js"></script>
+
+
+    <script type="text/javascript" src="lib/upload/fine-uploader.min.js"></script>
+
+    <script type="text/javascript" src="js/settings.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="cordova_plugins.js"></script>
+
+
+  </body>
+</html>
